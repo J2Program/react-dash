@@ -2,7 +2,7 @@ import React from 'react'
 import history from '../../history'
 
 class VQHubIdentifyButton extends React.Component {
-    identifyHandler = () => { history.pushState('/hub/' + this.props.id); }
+    identifyHandler = () => { history.push('/hub/' + this.props.id); }
     render() { return <button onClick={this.identifyHandler}>Identify</button> }
 }
 
