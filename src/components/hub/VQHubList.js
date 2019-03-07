@@ -7,7 +7,7 @@ const table = { width: '100%' }
 class VQHubList extends React.Component {
     render() {
         return (
-            <Paper style={{ position: 'relative' }}>
+            <Paper style={{ position: 'relative' }}>               
                 <Table>
                     <TableHead>
                         <TableRow>

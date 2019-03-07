@@ -4,18 +4,14 @@ import ListItem from '@material-ui/core/ListItem'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
 import DashboardIcon from '@material-ui/icons/Dashboard'
-
-import history from '../../history'
+import { Link } from 'react-router-dom'
 
 class VQMenu extends React.Component {
-
-    buttonHandler = (e) => { history.push(e) }
-
     render() {
         return (
             <List>
-                <ListItem button onClick={() => this.buttonHandler('/hubs')}>
-                    <ListItemIcon><DashboardIcon /></ListItemIcon><ListItemText primary="Hubs" />
+                <ListItem>
+                    <ListItemIcon><DashboardIcon /></ListItemIcon><Link to={"/"}><ListItemText primary="Hubs" /></Link>
                 </ListItem>
             </List>
         )

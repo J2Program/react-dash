@@ -1,8 +1,8 @@
 import React from 'react'
-import history from '../../history'
+import { Link } from 'react-router-dom'
+
 class VQHubViewButton extends React.Component {
-    viewHandler = () => { history.push('/hub/' + this.props.id) }
-    render() { return <button onClick={this.viewHandler}>View</button> }
+    render() { return <button><Link to={'/hub/' + this.props.id}>View</Link></button> }
 }
 
 export default VQHubViewButton

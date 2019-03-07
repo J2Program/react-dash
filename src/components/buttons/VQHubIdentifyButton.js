@@ -1,9 +1,8 @@
 import React from 'react'
-import history from '../../history'
+import { Link } from 'react-router-dom'
 
 class VQHubIdentifyButton extends React.Component {
-    identifyHandler = () => { history.push('/hub/' + this.props.id); }
-    render() { return <button onClick={this.identifyHandler}>Identify</button> }
+    render() { return <button><Link to={'/hub/' + this.props.id}>Identify</Link></button> }
 }
 
 export default VQHubIdentifyButton
